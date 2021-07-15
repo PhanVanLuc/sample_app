@@ -25,6 +25,7 @@ test:
 
 production:
   <<: *default
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: rubyonrails
   username: luc
   password: 123456
