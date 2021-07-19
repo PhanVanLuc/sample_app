@@ -5,6 +5,10 @@ ruby "2.6.8"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 6.1.4"
+gem "image_processing", "~>1.9.3"
+gem "mini_magick", "~>4.9.5"
+#Use a gem for Active Storage validations.
+gem "active_storage_validations", "~> 0.9.5"
 # Bootstrap
 gem "bootstrap-sass", "~>3.4.1"
 # Use mysql as the database for Active Record
@@ -46,6 +50,11 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem "rack-mini-profiler", "~> 2.0"
+end
+
+group :production do
+  gem "pg", "1.1.4"
+  gem "aws-sdk-s3", "1.46.0", require: false
 end
 
 group :test do
