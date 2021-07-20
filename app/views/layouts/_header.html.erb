@@ -3,9 +3,12 @@
         <%= link_to "sample app", '#', id: "logo" %>
         <nav>
             <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to "Home", root_path %></li>
-              <li><%= link_to "Help", help_path %></li>
-              <li><%= link_to "Log in", '#' %></li>
+              <li><%= link_to t("layout.header.home"), root_path %></li>
+              <li><%= link_to t("layout.header.help"), help_path %></li>
+              <li><%= link_to t("layout.header.login"), '#' %></li>
+              <li><%= link_to "EN", locale:"en" %></li>
+              <li><%= link_to "|", '#' %></li>
+              <li><%= link_to "VI", locale:"vi" %></li>
             </ul>
           </nav>
     </div>
