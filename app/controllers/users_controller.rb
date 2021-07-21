@@ -23,7 +23,10 @@ class UsersController < ApplicationController
     end
   end
   def edit
-    @user = User.find(params[:id])   
+    @user = User.find(params[:id])
+    rescue
+      flash[:success] = t('users.new.flash_show')
+      redirect_to root_url 
   end
   def update
     @user = User.find(params[:id])
@@ -47,6 +50,9 @@ class UsersController < ApplicationController
     def correct_user
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
+      rescue
+        flash[:success] = t('users.new.flash_show')
+        redirect_to root_url
     end
     # Confirms an admin user.
     def admin_user

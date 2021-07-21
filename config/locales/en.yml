@@ -31,3 +31,63 @@
 
 en:
   hello: "Hello world"
+en:
+  hello: "Hello world"
+  layout:
+    header:
+      home: 'Home'
+      help: 'Help'
+      login:  'Log In'
+      users: 'Users'
+      account:  'Account'
+      profile:  'Profile'
+      settings: 'Settings'
+      logout: 'Log out'
+    footer:
+      about:  'About'
+      contact:  'Contact'
+      news: 'News'
+
+  static_pages:
+      home:
+        title:  'Home'
+      about:
+        title:  'About'
+      help:
+        title: 'Help'
+      contact:
+        title:  'Contact'
+  helper:
+      application:
+        base_title: 'Ruby on Rails Tutorial Sample App'
+  users:
+    index:
+      title: 'All Users'
+    new:
+      title:  'Sign up'
+      flash_show: 'User not found!'
+    login:
+      title: 'Login'
+      remember: 'Remember me on this computer'
+      signupnow: 'Sign up now!'
+      newuser: 'New user?'
+    create: 
+      flash_create: 'Welcome to Sample App'
+    edit:
+      title: 'Update your profile'
+      submit: 'Save changes'
+    form:
+      name: 'Name:'
+      mail: 'Email:'
+      password: 'Password:'
+      password_confirmation:  'Password Confirmation:'
+      submit: 'Create my account'
+    show:
+      microposts: 'Microposts'
+      micropostfeed: 'Micropost Feed'
+      submit: 'Post'
+      placeholder: 'Compose new micropost...'
+  shared:
+      user_info:
+        viewprofile: 'view my profile'
+        micropost: 'micropost'
