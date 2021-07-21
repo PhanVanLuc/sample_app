@@ -1,0 +1,39 @@
+vi:
+  layout:
+    header:
+      home: 'Trang chủ'
+      help: 'Trợ giúp'
+      login:  'Đăng nhập'
+      account:  'Tài khoản'
+      profile:  'Hồ sơ'
+      settings: 'Cài đặt'
+      logout: 'Đăng xuất'
+    footer:
+      about:  'Giới thiệu'
+      contact:  'Liên hệ'
+      news: 'Tin tức'
+  static_pages:
+    home:
+      title: 'Trang chủ'
+    about:
+      title:  'Giới thiệu'
+    help:
+      title: 'Trợ giúp'
+    contact:
+      title:  'Liên hệ'
+  helper:
+    application:
+      base_title: 'Khóa học Ruby on rails'
+  users:
+    new:
+      title:  'Đăng ký'
+      flash_show: 'Không tìm thấy người dùng!'
+    create: 
+      flash_create: 'Chào mừng đến với Sample App'   
+    form:
+      name: 'Họ và tên:'
+      mail: 'Email:'
+      password: 'Mật khẩu:'
+      password_confirmation:  'Xác nhận mật khẩu:'
+      submit: 'Tạo tài khoản'
+      wellcome: 'Chào mừng đến với Sample App'
