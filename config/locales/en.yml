@@ -28,9 +28,6 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
-
-en:
-  hello: "Hello world"
 en:
   hello: "Hello world"
   layout:
@@ -80,5 +77,28 @@ en:
       name: 'Name:'
       mail: 'Email:'
       password: 'Password:'
+      forgot: '(forgot password)'
       password_confirmation:  'Password Confirmation:'
       submit: 'Create my account'
+    show:
+      microposts: 'Microposts'
+      micropostfeed: 'Micropost Feed'
+      submit: 'Post'
+      placeholder: 'Compose new micropost...'
+    user:
+      delete: 'Delete'
+    follow:
+      follow: 'Follow'
+      unfollow: 'Unfollow'
+  shared:
+    user_info:
+        viewprofile: 'view my profile'
+        micropost: 'micropost'
+    stats:
+      followers: 'followers'
+      following: 'following'
+  microposts:
+    micropost:
+      posted: 'Posted'
+      ago: 'ago'
+      delete: 'Delete'

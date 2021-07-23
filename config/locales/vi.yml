@@ -1,4 +1,8 @@
 vi:
+  will_paginate:
+    previous_label: "&#8592; Trang trước"
+    next_label: "Tiếp theo &#8594;"
+    page_gap: "&hellip"
   layout:
     header:
       home: 'Trang chủ'
@@ -45,6 +49,29 @@ vi:
       name: 'Họ và tên:'
       mail: 'Email:'
       password: 'Mật khẩu:'
+      forgot: '(Quên mật khẩu)'
       password_confirmation:  'Xác nhận mật khẩu:'
       submit: 'Tạo tài khoản'
       wellcome: 'Chào mừng đến với Sample App'
+    show:
+      microposts: "Bài đăng"
+      micropostfeed: 'Bảng tin'
+      submit: 'Đăng'
+      placeholder: 'Nội dung bài đăng...'
+    user:
+      delete: 'Xóa'
+    follow:
+      follow: 'Theo dõi'
+      unfollow: 'Bỏ theo dõi'
+  shared:
+    user_info:
+      viewprofile: 'Hiển thị profile'
+      micropost: 'bài đăng'
+    stats:
+      followers: 'Người theo dõi'
+      following: 'Đang theo dõi'
+  microposts:
+    micropost:
+      posted: 'Đã đăng'
+      ago: 'trước đây'
+      delete: 'Xóa'

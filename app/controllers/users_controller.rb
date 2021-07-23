@@ -11,9 +11,6 @@ class UsersController < ApplicationController
   end
   def new
     @user = User.new
-    rescue
-      flash[:success] = t('users.new.flash_show')
-      redirect_to root_url
   end
   def create
     @user = User.new(user_params)
