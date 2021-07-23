@@ -54,6 +54,10 @@ vi:
       submit: 'Đăng'
       placeholder: 'Nội dung bài đăng...'
   shared:
-      user_info:
-        viewprofile: 'Hiển thị profile'
-        micropost: 'bài đăng'
+    user_info:
+      viewprofile: 'Hiển thị profile'
+      micropost: 'bài đăng'
+  microposts:
+    micropost:
+      posted: 'Đã đăng'
+      ago: 'trước đây'

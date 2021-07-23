@@ -28,9 +28,6 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
-
-en:
-  hello: "Hello world"
 en:
   hello: "Hello world"
   layout:
@@ -88,6 +85,10 @@ en:
       submit: 'Post'
       placeholder: 'Compose new micropost...'
   shared:
-      user_info:
+    user_info:
         viewprofile: 'view my profile'
         micropost: 'micropost'
+  microposts:
+    microposst:
+      posted: 'Posted'
+      ago: 'ago'
