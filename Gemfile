@@ -5,10 +5,19 @@ ruby "2.6.8"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 6.1.4"
+gem "image_processing", "~>1.9.3"
+gem "mini_magick", "~>4.9.5"
+#Use a gem for Active Storage validations.
+gem "active_storage_validations", "~> 0.9.5"
 # Bootstrap
 gem "bootstrap-sass", "~>3.4.1"
+# Use mysql as the database for Active Record
+gem 'mysql2', '~> 0.5'
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+#use i18n
+gem "rails-i18n", "~> 6.0"
+# use figaro
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 # Use Puma as the app server
 gem "puma", "~> 5.0"
 # Use SCSS for stylesheets
@@ -22,7 +31,10 @@ gem "jbuilder", "~> 2.7"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 # Use Active Model has_secure_password
-# gem "bcrypt", "~> 3.1.7"
+gem "bcrypt", "~> 3.1.13"
+gem "faker", "~>2.1.2"
+gem "will_paginate", "~>3.1.8"
+gem "bootstrap-will_paginate", "~>1.0.0"
 
 # Use Active Storage variant
 # gem "image_processing", "~> 1.2"
@@ -41,6 +53,11 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem "rack-mini-profiler", "~> 2.0"
+end
+
+group :production do
+  gem "pg", "1.1.4"
+  gem 'aws-sdk-s3', '~> 1.96', '>= 1.96.2'
 end
 
 group :test do
